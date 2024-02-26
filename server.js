@@ -27,3 +27,22 @@ const PORT = process.env.PORT || 3001;
 server.listen(PORT, () => {
   console.log(`Servidor de sockets escuchando en el puerto ${PORT}`);
 });
+// // servidor.js
+// const net = require('net');
+
+// const server = net.createServer((socket) => {
+//   console.log('Cliente conectado');
+
+//   socket.on('encender', (data) => {
+//     console.log('Mensaje del cliente encender:', data.toString());
+//   });
+
+//   socket.on('end', () => {
+//     console.log('Cliente desconectado');
+//   });
+// });
+
+// const PORTSOCKET = 3001;
+// server.listen(PORTSOCKET, () => {
+//   console.log(`Servidor escuchando en el puerto ${PORTSOCKET}`);
+// });
