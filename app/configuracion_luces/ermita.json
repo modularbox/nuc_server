@@ -1,0 +1,12 @@
+{
+        "encender": [1,3,12,21,23,31,33,42,52],
+        "apagar": [4,3,4,3],
+        "horarios": [{
+            "horario_inicio": "21:29:00",
+            "horarario_fin": "22:31:00"
+        },{
+            "horario_inicio": "00:00:00",
+            "horarario_fin": "01:27:00"
+        }
+    ]
+    }
