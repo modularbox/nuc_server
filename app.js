@@ -24,45 +24,45 @@ app.listen(PORT, () => {
 });
 
 
-// Crear servidor HTTP
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Servidor HTTP funcionando correctamente.');
-});
-// Crear servidor WebSocket
-const wss = new WebSocket.Server({ server });
+// // Crear servidor HTTP
+// const server = http.createServer((req, res) => {
+//     res.writeHead(200, {'Content-Type': 'text/plain'});
+//     res.end('Servidor HTTP funcionando correctamente.');
+// });
+// // Crear servidor WebSocket
+// const wss = new WebSocket.Server({ server });
 
-// Escuchar eventos de conexión de WebSocket
-wss.on('connection', ws => {
-    logs('Cliente WebSocket conectado.');
+// // Escuchar eventos de conexión de WebSocket
+// wss.on('connection', ws => {
+//     logs('Cliente WebSocket conectado.');
 
-    // Escuchar eventos de mensajes desde el cliente
-    ws.on('message', message => {
-        logs('Mensaje recibido del cliente:', message);
+//     // Escuchar eventos de mensajes desde el cliente
+//     ws.on('message', message => {
+//         logs('Mensaje recibido del cliente:', message);
         
-        // Enviar respuesta al cliente
-        ws.send('Mensaje recibido por el servidor.');
-    });
+//         // Enviar respuesta al cliente
+//         ws.send('Mensaje recibido por el servidor.');
+//     });
 
-    // Escuchar eventos de cierre de conexión
-    ws.on('close', () => {
-        logs('Cliente WebSocket desconectado.');
-    });
+//     // Escuchar eventos de cierre de conexión
+//     ws.on('close', () => {
+//         logs('Cliente WebSocket desconectado.');
+//     });
 
-    // Manejar errores de conexión
-    ws.on('error', err => {
-        logs('Error de conexión:', err.message);
-    });
-});
+//     // Manejar errores de conexión
+//     ws.on('error', err => {
+//         logs('Error de conexión:', err.message);
+//     });
+// });
 
-// Escuchar en un puerto específico
-const PORTSOCKET = 3005;
-server.listen(PORTSOCKET, () => {
-    logs(`Servidor HTTP y WebSocket escuchando en el puerto ${PORTSOCKET}`);
-});
+// // Escuchar en un puerto específico
+// const PORTSOCKET = 3005;
+// server.listen(PORTSOCKET, () => {
+//     logs(`Servidor HTTP y WebSocket escuchando en el puerto ${PORTSOCKET}`);
+// });
 
 
-// // servidor.js
+// // // servidor.js
 // const net = require('net');
 
 // const server = net.createServer((socket) => {
@@ -77,7 +77,7 @@ server.listen(PORTSOCKET, () => {
 //   });
 // });
 
-// const PORTSOCKET = 8080;
+// const PORTSOCKET = 3005;
 // server.listen(PORTSOCKET, () => {
 //   logs(`Servidor escuchando en el puerto ${PORTSOCKET}`);
 // });

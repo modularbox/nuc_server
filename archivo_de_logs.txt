@@ -10,3 +10,6 @@
 2024-02-27T11:15:05.993Z - Listo por el puerto, 
 2024-02-27T11:16:04.777Z - Listo por el puerto, 
 2024-02-27T11:16:04.781Z - Servidor HTTP y WebSocket escuchando en el puerto 3005
+2024-02-28T09:48:17.559Z - Listo por el puerto, 
+2024-02-28T09:48:17.563Z - Servidor de sockets escuchando en el puerto 3005
+2024-02-28T09:49:25.465Z - Enviado configuracion modularbox correctamente

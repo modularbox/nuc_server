@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 
 // Conectar al servidor WebSocket
-const ws = new WebSocket('https://api.conectateriolobos.es:3005');
+const ws = new WebSocket('http://api.conectateriolobos.es:3005');
 
 // Escuchar eventos de conexión
 ws.on('open', () => {
